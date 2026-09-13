@@ -1,0 +1,2749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Happy Birthday Arka ❤️</title>
+
+
+<style>
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    font-family:
+        "Comic Sans MS",
+        "Trebuchet MS",
+        cursive;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd8e8,
+            #e8dcff,
+            #d9f5ff
+        );
+}
+
+
+/* =========================================================
+   MAIN SCENE
+========================================================= */
+
+.scene {
+
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   TOP TITLE
+========================================================= */
+
+.title {
+
+    position: absolute;
+
+    top: 5%;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size:
+        clamp(30px, 6vw, 58px);
+
+    font-weight: bold;
+
+    color: #e91e63;
+
+    text-shadow:
+        3px 3px 0 white,
+        5px 5px 0 rgba(0,0,0,.08);
+
+    animation:
+        titleBounce 1.5s
+        ease-in-out
+        infinite
+        alternate;
+
+    z-index: 10;
+}
+
+@keyframes titleBounce {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+
+/* =========================================================
+   CAKE CONTAINER
+========================================================= */
+
+.cake {
+
+    position: relative;
+
+    width:
+        min(700px, 92vw);
+
+    height: 350px;
+
+    margin-top: 105px;
+
+    z-index: 20;
+}
+
+
+/* =========================================================
+   CAKE VISUAL
+   This entire part slowly becomes smaller.
+========================================================= */
+
+.cake-visual {
+
+    position: absolute;
+
+    inset: 0;
+
+    transform-origin:
+        center 75%;
+
+    transform:
+        scale(1);
+
+    transition:
+        transform 1.1s
+        cubic-bezier(.25,.8,.25,1);
+}
+
+
+/* =========================================================
+   BIG CHOCOLATE CAKE
+========================================================= */
+
+.cake-body {
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    transform:
+        translateX(-50%);
+
+    width: 88%;
+    height: 180px;
+
+    border-radius:
+        25px
+        25px
+        40px
+        40px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #995a3b,
+            #71351f
+        );
+
+    border:
+        7px solid #542617;
+
+    box-shadow:
+        0 13px 0 #432014,
+        0 22px 30px
+        rgba(0,0,0,.20);
+}
+
+
+/* =========================================================
+   VANILLA FROSTING
+========================================================= */
+
+.frosting {
+
+    position: absolute;
+
+    left: 50%;
+    top: 105px;
+
+    transform:
+        translateX(-50%);
+
+    width: 91%;
+    height: 85px;
+
+    background:
+        #fff2d2;
+
+    border:
+        6px solid #e5cf9f;
+
+    border-radius: 50%;
+
+    z-index: 5;
+}
+
+
+/* =========================================================
+   CHOCOLATE DRIPS
+========================================================= */
+
+.drip {
+
+    position: absolute;
+
+    top: 143px;
+
+    width: 48px;
+
+    background:
+        #612d1b;
+
+    border-radius:
+        0
+        0
+        25px
+        25px;
+
+    z-index: 8;
+}
+
+.drip1 {
+    left: 18%;
+    height: 60px;
+}
+
+.drip2 {
+    left: 38%;
+    height: 78px;
+}
+
+.drip3 {
+    left: 59%;
+    height: 55px;
+}
+
+.drip4 {
+    left: 78%;
+    height: 72px;
+}
+
+
+/* =========================================================
+   CAKE DECORATIONS
+========================================================= */
+
+.dot {
+
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background:
+        #ff4f81;
+
+    z-index: 9;
+}
+
+.dot1 {
+    left: 15%;
+    bottom: 38px;
+}
+
+.dot2 {
+    left: 30%;
+    bottom: 58px;
+}
+
+.dot3 {
+    left: 50%;
+    bottom: 35px;
+}
+
+.dot4 {
+    left: 70%;
+    bottom: 55px;
+}
+
+.dot5 {
+    left: 85%;
+    bottom: 35px;
+}
+
+
+/* =========================================================
+   CANDLES
+========================================================= */
+
+.candles {
+
+    position: absolute;
+
+    left: 7%;
+    top: 61px;
+
+    width: 86%;
+    height: 75px;
+
+    z-index: 35;
+
+    transition:
+        opacity .8s ease;
+}
+
+.candle {
+
+    position: absolute;
+
+    bottom: 0;
+
+    width: 10px;
+    height: 50px;
+
+    border-radius: 5px;
+
+    box-shadow:
+        inset 2px 0
+        rgba(255,255,255,.55);
+}
+
+
+/* =========================================================
+   27 CANDLE POSITIONS
+========================================================= */
+
+.c1  { left: 0%; }
+.c2  { left: 4%; }
+.c3  { left: 8%; }
+.c4  { left: 12%; }
+.c5  { left: 16%; }
+.c6  { left: 20%; }
+.c7  { left: 24%; }
+.c8  { left: 28%; }
+.c9  { left: 32%; }
+.c10 { left: 36%; }
+.c11 { left: 40%; }
+.c12 { left: 44%; }
+.c13 { left: 48%; }
+.c14 { left: 52%; }
+.c15 { left: 56%; }
+.c16 { left: 60%; }
+.c17 { left: 64%; }
+.c18 { left: 68%; }
+.c19 { left: 72%; }
+.c20 { left: 76%; }
+.c21 { left: 80%; }
+.c22 { left: 84%; }
+.c23 { left: 88%; }
+.c24 { left: 92%; }
+.c25 { left: 96%; }
+
+.c26 {
+    left: 49%;
+    bottom: 18px;
+}
+
+.c27 {
+    left: 53%;
+    bottom: 18px;
+}
+
+
+/* =========================================================
+   CANDLE COLORS
+========================================================= */
+
+.c1  { background:#ff1744; }
+.c2  { background:#2196f3; }
+.c3  { background:#4caf50; }
+.c4  { background:#ff9800; }
+.c5  { background:#9c27b0; }
+.c6  { background:#00bcd4; }
+.c7  { background:#f44336; }
+.c8  { background:#8bc34a; }
+.c9  { background:#ffc107; }
+.c10 { background:#673ab7; }
+.c11 { background:#e91e63; }
+.c12 { background:#03a9f4; }
+.c13 { background:#4caf50; }
+.c14 { background:#ff5722; }
+.c15 { background:#9c27b0; }
+.c16 { background:#2196f3; }
+.c17 { background:#ffca28; }
+.c18 { background:#e91e63; }
+.c19 { background:#00bcd4; }
+.c20 { background:#ff9800; }
+.c21 { background:#8bc34a; }
+.c22 { background:#673ab7; }
+.c23 { background:#f44336; }
+.c24 { background:#03a9f4; }
+.c25 { background:#ff4081; }
+.c26 { background:#ff1744; }
+.c27 { background:#00c853; }
+
+
+/* =========================================================
+   FLAME
+========================================================= */
+
+.flame {
+
+    position: absolute;
+
+    left: 50%;
+    top: -25px;
+
+    width: 16px;
+    height: 24px;
+
+    transform:
+        translateX(-50%)
+        rotate(-45deg);
+
+    border-radius:
+        50%
+        50%
+        50%
+        0;
+
+    background:
+        #ffb300;
+
+    box-shadow:
+        0 0 8px #ff9800,
+        0 0 18px #ff5722;
+
+    animation:
+        flameFlicker .22s
+        infinite
+        alternate;
+}
+
+
+@keyframes flameFlicker {
+
+    from {
+
+        transform:
+            translateX(-50%)
+            rotate(-42deg)
+            scale(1);
+    }
+
+    to {
+
+        transform:
+            translateX(-50%)
+            rotate(-51deg)
+            scale(1.14);
+    }
+}
+
+
+/* =========================================================
+   VERY CLEAR BLOW-OUT
+========================================================= */
+
+.candle.blown .flame {
+
+    animation:
+        candleBlow
+        .55s
+        ease-out
+        forwards;
+}
+
+
+@keyframes candleBlow {
+
+    0% {
+
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            rotate(-45deg)
+            scale(1);
+    }
+
+    20% {
+
+        opacity: 1;
+
+        transform:
+            translateX(7px)
+            rotate(-65deg)
+            scale(1.2);
+    }
+
+    45% {
+
+        opacity: .85;
+
+        transform:
+            translateX(17px)
+            rotate(-90deg)
+            scale(.9);
+    }
+
+    70% {
+
+        opacity: .45;
+
+        transform:
+            translateX(30px)
+            rotate(-110deg)
+            scale(.5);
+    }
+
+    100% {
+
+        opacity: 0;
+
+        transform:
+            translateX(48px)
+            rotate(-135deg)
+            scale(.05);
+    }
+}
+
+
+/* =========================================================
+   WIND
+========================================================= */
+
+.wind {
+
+    position: absolute;
+
+    left: 43%;
+    top: 90px;
+
+    width: 175px;
+    height: 70px;
+
+    pointer-events: none;
+
+    opacity: 0;
+
+    z-index: 50;
+}
+
+.wind.active {
+
+    opacity: 1;
+
+    animation:
+        windMove .65s ease-out
+        forwards;
+}
+
+.wind-line {
+
+    position: absolute;
+
+    right: 0;
+
+    height: 5px;
+
+    background: white;
+
+    border-radius: 20px;
+}
+
+.wind-line:nth-child(1) {
+    width: 120px;
+    top: 10px;
+}
+
+.wind-line:nth-child(2) {
+    width: 90px;
+    top: 31px;
+}
+
+.wind-line:nth-child(3) {
+    width: 60px;
+    top: 52px;
+}
+
+
+@keyframes windMove {
+
+    0% {
+
+        transform:
+            translateX(-110px);
+
+        opacity: 0;
+    }
+
+    25% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateX(210px);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   BLOW BUTTON
+========================================================= */
+
+#blowButton {
+
+    position: absolute;
+
+    bottom: 7%;
+
+    padding:
+        17px
+        35px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+        #ff4081;
+
+    color:
+        white;
+
+    font-size:
+        20px;
+
+    font-weight:
+        bold;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 7px 0 #c2185b;
+
+    transition:
+        .2s;
+
+    z-index: 70;
+}
+
+
+#blowButton:hover {
+
+    transform:
+        scale(1.05);
+}
+
+
+#blowButton:disabled {
+
+    cursor:
+        default;
+}
+
+
+/* =========================================================
+   HBD MESSAGE AREA
+========================================================= */
+
+.floating-hbd {
+
+    position: fixed;
+
+    left: 50%;
+    top: 14%;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        min(90vw, 700px);
+
+    text-align:
+        center;
+
+    z-index: 120;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity .5s ease;
+}
+
+
+/* =========================================================
+   HBD POPUP BOX
+========================================================= */
+
+.hbd-popup {
+
+    display:
+        inline-block;
+
+    padding:
+        22px
+        38px;
+
+    background:
+        rgba(
+            255,
+            250,
+            241,
+            .70
+        );
+
+    border:
+        4px solid
+        rgba(
+            255,
+            159,
+            189,
+            .68
+        );
+
+    border-radius:
+        28px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.12);
+
+    backdrop-filter:
+        blur(3px);
+
+    -webkit-backdrop-filter:
+        blur(3px);
+
+    transition:
+        opacity .6s ease,
+        background .6s ease,
+        border .6s ease,
+        box-shadow .6s ease;
+}
+
+
+/* =========================================================
+   HBD TEXT
+========================================================= */
+
+.hbd-text {
+
+    margin:
+        0;
+
+    white-space:
+        nowrap;
+
+    color:
+        #e91e63;
+
+    font-size:
+        clamp(
+            42px,
+            8vw,
+            80px
+        );
+
+    line-height:
+        1.15;
+
+    font-weight:
+        bold;
+
+    text-align:
+        center;
+
+    opacity:
+        0;
+}
+
+
+/* =========================================================
+   TYPEWRITER
+========================================================= */
+
+.hbd-text.type {
+
+    animation:
+        typeHBD
+        2.2s
+        steps(8, end)
+        forwards;
+}
+
+
+@keyframes typeHBD {
+
+    from {
+
+        clip-path:
+            inset(
+                0 100% 0 0
+            );
+    }
+
+    to {
+
+        clip-path:
+            inset(
+                0 0 0 0
+            );
+    }
+}
+
+
+/* =========================================================
+   SLOW BOUNCE AFTER POPUP BOX DISAPPEARS
+========================================================= */
+
+.hbd-text.bounce {
+
+    opacity: 1;
+
+    animation:
+        slowBounce
+        2.5s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes slowBounce {
+
+    0%,
+    100% {
+
+        transform:
+            translateY(0)
+            rotate(-1deg);
+    }
+
+    50% {
+
+        transform:
+            translateY(-13px)
+            rotate(1deg);
+    }
+}
+
+
+/* =========================================================
+   BOX DISAPPEARS AT 0:05
+========================================================= */
+
+.hbd-popup.hidden {
+
+    background:
+        transparent;
+
+    border-color:
+        transparent;
+
+    box-shadow:
+        none;
+
+    backdrop-filter:
+        none;
+
+    -webkit-backdrop-filter:
+        none;
+
+    padding:
+        0;
+}
+
+
+/* =========================================================
+   27 CAKE PIECES
+========================================================= */
+
+.pieces-layer {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    pointer-events:
+        none;
+
+    z-index:
+        90;
+}
+
+
+.cake-piece {
+
+    position:
+        fixed;
+
+    width:
+        42px;
+
+    height:
+        32px;
+
+    opacity:
+        0;
+
+    border:
+        2px solid
+        rgba(76,34,18,.35);
+
+    border-radius:
+        5px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #fff0cb 0%,
+            #fff0cb 20%,
+            #955333 20%,
+            #71351f 100%
+        );
+
+    box-shadow:
+        0 4px 8px
+        rgba(0,0,0,.15);
+
+    transform:
+        translate(-50%, -50%)
+        rotate(0deg)
+        scale(.2);
+
+    transition:
+        left 1.8s
+        cubic-bezier(.18,.75,.25,1),
+
+        top 1.8s
+        cubic-bezier(.18,.75,.25,1),
+
+        transform 1.8s
+        cubic-bezier(.18,.75,.25,1),
+
+        opacity .45s ease;
+}
+
+
+/* Piece visible when cut */
+
+.cake-piece.cut {
+
+    opacity:
+        1;
+
+    transform:
+        translate(-50%, -50%)
+        rotate(0deg)
+        scale(1);
+
+    animation:
+        pieceCut
+        .55s
+        ease-out;
+}
+
+
+@keyframes pieceCut {
+
+    0% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(.15);
+    }
+
+    70% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1.12);
+    }
+
+    100% {
+
+        transform:
+            translate(-50%, -50%)
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   FINAL LOVE POPUP
+========================================================= */
+
+.love-popup {
+
+    position:
+        fixed;
+
+    inset:
+        0;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        transparent;
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    pointer-events:
+        none;
+
+    z-index:
+        300;
+
+    transition:
+        opacity .8s ease;
+}
+
+
+.love-popup.show {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+}
+
+
+.love-box {
+
+    width:
+        min(90vw, 680px);
+
+    padding:
+        38px 30px;
+
+    text-align:
+        center;
+
+    background:
+        rgba(
+            255,
+            250,
+            241,
+            .78
+        );
+
+    border:
+        5px solid
+        rgba(
+            255,
+            159,
+            189,
+            .75
+        );
+
+    border-radius:
+        35px;
+
+    box-shadow:
+        0 15px 45px
+        rgba(0,0,0,.15);
+
+    backdrop-filter:
+        blur(4px);
+
+    -webkit-backdrop-filter:
+        blur(4px);
+
+    animation:
+        finalPopup
+        .9s
+        ease-out;
+}
+
+
+@keyframes finalPopup {
+
+    from {
+
+        transform:
+            scale(.45)
+            rotate(-8deg);
+
+        opacity:
+            0;
+    }
+
+    to {
+
+        transform:
+            scale(1)
+            rotate(0);
+
+        opacity:
+            1;
+    }
+}
+
+
+/* =========================================================
+   HEART
+========================================================= */
+
+.love-heart {
+
+    display:
+        inline-block;
+
+    font-size:
+        68px;
+
+    animation:
+        heartBeat
+        .55s
+        infinite
+        alternate;
+}
+
+
+@keyframes heartBeat {
+
+    from {
+
+        transform:
+            rotate(-8deg)
+            scale(1);
+    }
+
+    to {
+
+        transform:
+            rotate(8deg)
+            scale(1.2);
+    }
+}
+
+
+/* =========================================================
+   FINAL LOVE TEXT
+========================================================= */
+
+.love-text {
+
+    margin:
+        10px 0 0;
+
+    font-size:
+        clamp(
+            36px,
+            7vw,
+            72px
+        );
+
+    line-height:
+        1.12;
+
+    color:
+        #e91e63;
+
+    animation:
+        loveDance
+        .8s
+        ease-in-out
+        infinite
+        alternate;
+}
+
+
+@keyframes loveDance {
+
+    0% {
+
+        transform:
+            rotate(-4deg)
+            translateY(0)
+            scale(1);
+    }
+
+    100% {
+
+        transform:
+            rotate(4deg)
+            translateY(-13px)
+            scale(1.07);
+    }
+}
+
+
+/* =========================================================
+   CONFETTI
+========================================================= */
+
+.confetti {
+
+    position:
+        absolute;
+
+    width:
+        10px;
+
+    height:
+        18px;
+
+    animation:
+        confettiFall
+        5s
+        linear
+        infinite;
+
+    z-index:
+        2;
+}
+
+
+@keyframes confettiFall {
+
+    from {
+
+        transform:
+            translateY(-100px)
+            rotate(0);
+    }
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+    }
+}
+
+
+.f1 {
+    left: 5%;
+    background: #ff4081;
+    animation-delay: .5s;
+}
+
+.f2 {
+    left: 17%;
+    background: #2196f3;
+    animation-delay: 2s;
+}
+
+.f3 {
+    left: 30%;
+    background: #ffeb3b;
+    animation-delay: 1s;
+}
+
+.f4 {
+    left: 52%;
+    background: #4caf50;
+    animation-delay: 3s;
+}
+
+.f5 {
+    left: 72%;
+    background: #9c27b0;
+    animation-delay: 1.5s;
+}
+
+.f6 {
+    left: 90%;
+    background: #ff5722;
+    animation-delay: 2.5s;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .cake {
+
+        width:
+            96vw;
+
+        transform:
+            scale(.8);
+
+        margin-top:
+            90px;
+    }
+
+
+    .title {
+
+        top:
+            7%;
+
+        font-size:
+            30px;
+    }
+
+
+    #blowButton {
+
+        font-size:
+            17px;
+
+        padding:
+            14px 25px;
+    }
+
+
+    .hbd-text {
+
+        font-size:
+            42px;
+    }
+
+
+    .hbd-popup {
+
+        padding:
+            18px 25px;
+    }
+
+
+    .love-box {
+
+        padding:
+            32px 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     MUSIC
+========================================================= -->
+
+<audio
+    id="birthdayMusic"
+    preload="auto"
+    src="music.mp3">
+</audio>
+
+
+<!-- =========================================================
+     MAIN SCENE
+========================================================= -->
+
+<div class="scene">
+
+
+    <!-- TOP TITLE -->
+
+    <div class="title">
+
+        🎉 Happy Birthday Arka 🎉
+
+    </div>
+
+
+    <!-- CONFETTI -->
+
+    <div class="confetti f1"></div>
+    <div class="confetti f2"></div>
+    <div class="confetti f3"></div>
+    <div class="confetti f4"></div>
+    <div class="confetti f5"></div>
+    <div class="confetti f6"></div>
+
+
+    <!-- =====================================================
+         CAKE
+    ====================================================== -->
+
+    <div
+        class="cake"
+        id="cake">
+
+
+        <!-- This part shrinks -->
+
+        <div
+            class="cake-visual"
+            id="cakeVisual">
+
+
+            <!-- Cake body -->
+
+            <div
+                class="cake-body"
+                id="cakeBody">
+
+
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+
+
+            </div>
+
+
+            <!-- Vanilla -->
+
+            <div
+                class="frosting">
+            </div>
+
+
+            <!-- Chocolate drips -->
+
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+            <div class="drip drip4"></div>
+
+
+        </div>
+
+
+        <!-- =================================================
+             27 CANDLES
+        ================================================== -->
+
+        <div
+            class="candles"
+            id="candles">
+
+
+            <div class="candle c1">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c2">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c3">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c4">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c5">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c6">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c7">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c8">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c9">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c10">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c11">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c12">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c13">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c14">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c15">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c16">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c17">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c18">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c19">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c20">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c21">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c22">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c23">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c24">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c25">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c26">
+                <span class="flame"></span>
+            </div>
+
+            <div class="candle c27">
+                <span class="flame"></span>
+            </div>
+
+
+        </div>
+
+
+        <!-- WIND -->
+
+        <div
+            class="wind"
+            id="wind">
+
+
+            <div class="wind-line"></div>
+            <div class="wind-line"></div>
+            <div class="wind-line"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         27 CAKE PIECES
+    ====================================================== -->
+
+    <div
+        class="pieces-layer"
+        id="piecesLayer">
+    </div>
+
+
+    <!-- =====================================================
+         BUTTON
+    ====================================================== -->
+
+    <button
+        id="blowButton">
+
+        💨 Blow the Candles
+
+    </button>
+
+
+</div>
+
+
+<!-- =========================================================
+     HBD MESSAGE
+========================================================= -->
+
+<div
+    class="floating-hbd"
+    id="floatingHBD">
+
+
+    <div
+        class="hbd-popup"
+        id="hbdPopup">
+
+
+        <h1
+            class="hbd-text"
+            id="hbdText">
+
+            Happy Birthday ARKA
+
+        </h1>
+
+
+        <div
+            style="
+                font-size:36px;
+                margin-top:8px;
+            ">
+
+            🕯️ 🎂 ❤️ 
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<!-- =========================================================
+     FINAL LOVE MESSAGE
+========================================================= -->
+
+<div
+    class="love-popup"
+    id="lovePopup">
+
+
+    <div
+        class="love-box">
+
+
+        <div class="love-heart">
+
+            ❤️
+
+        </div>
+
+
+        <h1 class="love-text">
+
+            I Love You
+            <br>
+            আমার মিত্র
+
+        </h1>
+
+
+        <div
+            style="
+                font-size:50px;
+                margin-top:18px;
+            ">
+
+            💕 🥰 💖
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+/* =========================================================
+   ELEMENTS
+========================================================= */
+
+const button =
+    document.getElementById(
+        "blowButton"
+    );
+
+
+const music =
+    document.getElementById(
+        "birthdayMusic"
+    );
+
+
+const candles =
+    document.querySelectorAll(
+        ".candle"
+    );
+
+
+const wind =
+    document.getElementById(
+        "wind"
+    );
+
+
+const cakeVisual =
+    document.getElementById(
+        "cakeVisual"
+    );
+
+
+const cakeBody =
+    document.getElementById(
+        "cakeBody"
+    );
+
+
+const floatingHBD =
+    document.getElementById(
+        "floatingHBD"
+    );
+
+
+const hbdPopup =
+    document.getElementById(
+        "hbdPopup"
+    );
+
+
+const hbdText =
+    document.getElementById(
+        "hbdText"
+    );
+
+
+const lovePopup =
+    document.getElementById(
+        "lovePopup"
+    );
+
+
+const piecesLayer =
+    document.getElementById(
+        "piecesLayer"
+    );
+
+
+/* =========================================================
+   STATE
+========================================================= */
+
+let started =
+    false;
+
+
+let finalShown =
+    false;
+
+
+/*
+   Number of pieces already cut.
+*/
+
+let piecesCut =
+    0;
+
+
+/*
+   Number of pieces already scattered.
+*/
+
+let piecesScattered =
+    0;
+
+
+/* =========================================================
+   CREATE 27 CAKE PIECES
+========================================================= */
+
+const pieces = [];
+
+
+for (
+    let i = 0;
+    i < 27;
+    i++
+) {
+
+    const piece =
+        document.createElement(
+            "div"
+        );
+
+
+    piece.className =
+        "cake-piece";
+
+
+    /*
+       Slight variation in size.
+    */
+
+    piece.style.width =
+        `${34 + Math.random() * 13}px`;
+
+
+    piece.style.height =
+        `${27 + Math.random() * 10}px`;
+
+
+    piecesLayer.appendChild(
+        piece
+    );
+
+
+    pieces.push(
+        piece
+    );
+
+}
+
+
+/* =========================================================
+   TRIANGLE TARGETS
+========================================================= */
+
+
+/*
+   27 positions:
+
+   1
+   2
+   3
+   4
+   5
+   6
+   6
+
+   = 27
+
+   This creates a large triangular
+   arrangement across the screen.
+*/
+
+const rowSizes =
+    [1, 2, 3, 4, 5, 6, 6];
+
+
+const triangleTargets = [];
+
+
+const rowSpacing = 9;
+
+
+let currentRow = 0;
+
+
+rowSizes.forEach(
+    function(rowSize) {
+
+
+        const y =
+            22 +
+            currentRow *
+            rowSpacing;
+
+
+        /*
+           Triangle becomes wider
+           as it goes down.
+        */
+
+        const width =
+            rowSize === 1
+                ? 0
+                : 16 + rowSize * 8;
+
+
+        for (
+            let col = 0;
+            col < rowSize;
+            col++
+        ) {
+
+
+            let x;
+
+
+            if (
+                rowSize === 1
+            ) {
+
+                x = 50;
+
+            }
+
+            else {
+
+                x =
+                    50 -
+                    width / 2 +
+                    (
+                        col /
+                        (rowSize - 1)
+                    ) *
+                    width;
+
+            }
+
+
+            triangleTargets.push({
+                x: x,
+                y: y
+            });
+
+        }
+
+
+        currentRow++;
+
+    }
+);
+
+
+/* =========================================================
+   GET A POINT ON CURRENT CAKE
+========================================================= */
+
+function getCakeStartPoint() {
+
+    const rect =
+        cakeBody.getBoundingClientRect();
+
+
+    /*
+       Random point inside cake.
+    */
+
+    const x =
+        rect.left +
+        rect.width *
+        (
+            0.15 +
+            Math.random() * 0.70
+        );
+
+
+    const y =
+        rect.top +
+        rect.height *
+        (
+            0.10 +
+            Math.random() * 0.75
+        );
+
+
+    return {
+        x: x,
+        y: y
+    };
+
+}
+
+
+/* =========================================================
+   SHRINK CAKE
+========================================================= */
+
+function shrinkCake() {
+
+    piecesCut++;
+
+
+    /*
+       Cake gradually gets smaller.
+
+       Initial = 1
+       Final ≈ .35
+    */
+
+    const scale =
+        Math.max(
+            .35,
+            1 -
+            piecesCut *
+            .024
+        );
+
+
+    cakeVisual.style.transform =
+        `scale(${scale})`;
+
+}
+
+
+/* =========================================================
+   CUT ONE PIECE
+========================================================= */
+
+function cutPiece() {
+
+    if (
+        piecesCut >= 27
+    ) {
+
+        return;
+
+    }
+
+
+    const piece =
+        pieces[piecesCut];
+
+
+    const start =
+        getCakeStartPoint();
+
+
+    /*
+       Put piece exactly over cake.
+    */
+
+    piece.style.left =
+        `${start.x}px`;
+
+
+    piece.style.top =
+        `${start.y}px`;
+
+
+    piece.style.transform =
+        `
+        translate(-50%, -50%)
+        rotate(0deg)
+        scale(.15)
+        `;
+
+
+    /*
+       Force reflow.
+    */
+
+    void piece.offsetWidth;
+
+
+    /*
+       Show piece.
+    */
+
+    piece.classList.add(
+        "cut"
+    );
+
+
+    /*
+       Cake becomes smaller.
+    */
+
+    shrinkCake();
+
+}
+
+
+/* =========================================================
+   SCATTER ONE PIECE
+========================================================= */
+
+function scatterPiece() {
+
+    if (
+        piecesScattered >= 27
+    ) {
+
+        return;
+
+    }
+
+
+    const index =
+        piecesScattered;
+
+
+    const piece =
+        pieces[index];
+
+
+    const target =
+        triangleTargets[index];
+
+
+    /*
+       Make sure piece is visible.
+    */
+
+    piece.classList.add(
+        "cut"
+    );
+
+
+    /*
+       Move slowly into triangular position.
+    */
+
+    piece.style.left =
+        `${target.x}vw`;
+
+
+    piece.style.top =
+        `${target.y}vh`;
+
+
+    const rotation =
+        -40 +
+        Math.random() * 80;
+
+
+    const scale =
+        .75 +
+        Math.random() * .4;
+
+
+    piece.style.transform =
+        `
+        translate(-50%, -50%)
+        rotate(${rotation}deg)
+        scale(${scale})
+        `;
+
+
+    piecesScattered++;
+
+}
+
+
+/* =========================================================
+   TYPEWRITER
+========================================================= */
+
+function startTypewriter() {
+
+    /*
+       Reset text animation.
+    */
+
+    hbdText.classList.remove(
+        "type",
+        "bounce"
+    );
+
+
+    void hbdText.offsetWidth;
+
+
+    hbdText.classList.add(
+        "type"
+    );
+
+
+    hbdText.style.opacity =
+        "1";
+
+}
+
+
+/* =========================================================
+   HBD POPUP AT 0:04
+========================================================= */
+
+function showHBD() {
+
+    floatingHBD.classList.add(
+        "show"
+    );
+
+
+    hbdPopup.classList.remove(
+        "hidden"
+    );
+
+
+    startTypewriter();
+
+}
+
+
+/* =========================================================
+   POPUP BOX DISAPPEARS AT 0:05
+========================================================= */
+
+function removeHBDBox() {
+
+    hbdPopup.classList.add(
+        "hidden"
+    );
+
+
+    /*
+       Keep only HBD ARKA.
+
+       Start gentle bouncing.
+    */
+
+    hbdText.classList.remove(
+        "type"
+    );
+
+
+    void hbdText.offsetWidth;
+
+
+    hbdText.classList.add(
+        "bounce"
+    );
+
+}
+
+
+/* =========================================================
+   FINAL LOVE POPUP
+========================================================= */
+
+function showFinalLove() {
+
+    if (
+        finalShown
+    ) {
+
+        return;
+    }
+
+
+    finalShown =
+        true;
+
+
+    /*
+       Remove HBD.
+    */
+
+    floatingHBD.style.opacity =
+        "0";
+
+
+    /*
+       Show final popup.
+    */
+
+    lovePopup.classList.add(
+        "show"
+    );
+
+}
+
+
+/* =========================================================
+   EXACT TIMELINE
+========================================================= */
+
+
+/*
+   Every pair belongs to one physical piece.
+
+   Pair 1:
+   0:06 cut
+   0:08 scatter
+
+   Pair 2:
+   0:10 cut
+   0:12 scatter
+
+   ...
+
+   Pair 27:
+   1:50 cut
+   1:52 scatter
+*/
+
+
+const pieceTimeline = [
+
+    [6, 8],
+    [10, 12],
+    [14, 16],
+    [18, 20],
+    [22, 24],
+    [26, 28],
+    [30, 32],
+    [34, 36],
+    [38, 40],
+    [42, 44],
+    [46, 48],
+    [50, 52],
+    [54, 56],
+    [58, 60],
+    [62, 64],
+    [66, 68],
+    [70, 72],
+    [74, 76],
+    [78, 80],
+    [82, 84],
+    [86, 88],
+    [90, 92],
+    [94, 96],
+    [98, 100],
+    [102, 104],
+    [106, 108],
+    [110, 112]
+
+];
+
+
+/* =========================================================
+   TIMELINE CONTROL
+========================================================= */
+
+let processedCutEvents =
+    new Set();
+
+
+let processedScatterEvents =
+    new Set();
+
+
+function handleTimeline(
+    currentTime
+) {
+
+
+    /* ==============================================
+       0:04 HBD
+    ============================================== */
+
+    if (
+        currentTime >= 4 &&
+        currentTime < 5
+    ) {
+
+        if (
+            !floatingHBD.classList.contains(
+                "show"
+            )
+        ) {
+
+            showHBD();
+
+        }
+
+    }
+
+
+    /* ==============================================
+       0:05 REMOVE BOX
+    ============================================== */
+
+    if (
+        currentTime >= 5 &&
+        !hbdPopup.classList.contains(
+            "hidden"
+        )
+    ) {
+
+        removeHBDBox();
+
+    }
+
+
+    /* ==============================================
+       PIECE EVENTS
+    ============================================== */
+
+    pieceTimeline.forEach(
+        function(pair, index) {
+
+
+            const cutTime =
+                pair[0];
+
+
+            const scatterTime =
+                pair[1];
+
+
+            /* ==============================
+               CUT
+            ============================== */
+
+            if (
+                currentTime >= cutTime &&
+                !processedCutEvents.has(
+                    index
+                )
+            ) {
+
+                processedCutEvents.add(
+                    index
+                );
+
+
+                cutPiece();
+
+            }
+
+
+            /* ==============================
+               SCATTER
+            ============================== */
+
+            if (
+                currentTime >= scatterTime &&
+                !processedScatterEvents.has(
+                    index
+                )
+            ) {
+
+                processedScatterEvents.add(
+                    index
+                );
+
+
+                scatterPiece();
+
+            }
+
+        }
+    );
+
+
+    /* ==============================================
+       1:53 FINAL MESSAGE
+    ============================================== */
+
+    if (
+        currentTime >= 113 &&
+        !finalShown
+    ) {
+
+        showFinalLove();
+
+    }
+
+}
+
+
+/* =========================================================
+   MUSIC TIME UPDATE
+========================================================= */
+
+music.addEventListener(
+    "timeupdate",
+    function() {
+
+        if (
+            !started
+        ) {
+
+            return;
+
+        }
+
+
+        handleTimeline(
+            music.currentTime
+        );
+
+    }
+);
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+button.addEventListener(
+    "click",
+    async function() {
+
+
+        if (
+            started
+        ) {
+
+            return;
+
+        }
+
+
+        started =
+            true;
+
+
+        button.disabled =
+            true;
+
+
+        button.innerText =
+            "🎉 Birthday Magic...";
+
+
+        button.style.opacity =
+            ".65";
+
+
+        /* =========================================
+           FIRST CANDLE BLOWS FIRST
+        ========================================= */
+
+        candles[0].classList.add(
+            "blown"
+        );
+
+
+        /* =========================================
+           WIND
+        ========================================= */
+
+        wind.classList.remove(
+            "active"
+        );
+
+
+        void wind.offsetWidth;
+
+
+        wind.classList.add(
+            "active"
+        );
+
+
+        /* =========================================
+           MUSIC STARTS IMMEDIATELY
+           AFTER FIRST CANDLE
+        ========================================= */
+
+        music.currentTime =
+            0;
+
+
+        try {
+
+            await music.play();
+
+        }
+
+        catch (error) {
+
+            console.error(
+                "music.mp3 could not be played:",
+                error
+            );
+
+        }
+
+
+        /* =========================================
+           OTHER 26 CANDLES
+
+           27 candles total
+           over approximately 3 seconds.
+
+           115ms between each candle.
+        ========================================= */
+
+        const candleInterval =
+            115;
+
+
+        candles.forEach(
+            function(
+                candle,
+                index
+            ) {
+
+
+                if (
+                    index === 0
+                ) {
+
+                    return;
+
+                }
+
+
+                setTimeout(
+                    function() {
+
+
+                        candle.classList.add(
+                            "blown"
+                        );
+
+
+                        wind.classList.remove(
+                            "active"
+                        );
+
+
+                        void wind.offsetWidth;
+
+
+                        wind.classList.add(
+                            "active"
+                        );
+
+
+                    },
+
+                    index *
+                    candleInterval
+
+                );
+
+            }
+        );
+
+
+        /* =========================================
+           Hide candles after blowing
+        ========================================= */
+
+        setTimeout(
+            function() {
+
+                document
+                    .getElementById(
+                        "candles"
+                    )
+                    .style.opacity =
+                    "0";
+
+            },
+
+            3600
+        );
+
+
+        /* =========================================
+           SAFETY TIMER FOR FINAL MESSAGE
+
+           Actual trigger is based on
+           music.currentTime.
+
+           This is only a fallback in case
+           timeupdate is slow.
+        ========================================= */
+
+        setTimeout(
+            function() {
+
+                if (
+                    music.currentTime >= 112.5
+                ) {
+
+                    showFinalLove();
+
+                }
+
+            },
+
+            113000
+        );
+
+    }
+);
+
+
+/* =========================================================
+   MUSIC ENDS
+========================================================= */
+
+music.addEventListener(
+    "ended",
+    function() {
+
+
+        /*
+           Music should end at approximately
+           1:54.
+
+           If final popup somehow has not
+           appeared yet, show it.
+        */
+
+        if (
+            !finalShown
+        ) {
+
+            showFinalLove();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
